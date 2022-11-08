@@ -1,0 +1,26 @@
+## Avaliação Teórica ##
+
+Edite o arquivo chamado Respostas.txt e responda as seguintes questões:
+
+1- Explique, detalhadamente, como recuperar um conjunto de linhas de uma tabela de um banco de dados relacional e transformar em um conjunto de objetos em Java.
+
+2 – O que é uma interface em Java?
+
+Uma interface em Java é um metodo para dar um sequenciamento a classes abstratas permitindo que exista um sequencia pratica e logica para o uso.
+
+3 – Explique o que é um DAO?
+
+O DAO (Data Acess Object) é um modelo que visa corrigir um problema com tres pontos, legado, isolamento e mapeamento de objetos. Sua função é mapear as informacoes que estao
+sendo transportadas para instrucoes de API de persistencia e mapeia os resultados obtidos dela de volta para os mesmos objetos de transporte, ao fim toda logica de mapeamento e 
+execucao das intrucoes é deixada dentro do objeto DAO o que deixa a aplicacao da API isolada da persistencia por completo.
+
+4 – Foi solicitado a você escrever um programa em Java que realize um CRUD de clientes. O que isso significa? 
+
+Significa que devo criar uma funcao que seja capaz de criar, ler, atualizar e apagar algum dado. Visto que toda informaçao a ser inserida no programa precisa de um banco de
+dados para salva-la e apos salvar precisamos de algo que nos permita alterar essas informaçoes é ai que entra o CRUD ele que nos permite remover, incluir, recuperar ou modificar
+algo de dentro do banco de dados
+
+5 – Durante o processo de revisão de um código-fonte você encontrou uma operação de inserção em um banco de dados escrita diretamente no método de ação de um botão. Isso está
+correto? Se não está, como é possível melhorar o código-fonte?
+
+Nao, pois ao inserir o insert na acao de um botao voce estara ignorando o JDBC. É possivel melhora-lo utilizando o insert no JDBC.
